@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+body,ul,li{
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+	overflow-y:auto;  
+	font-size: 14px;
+	font-family: '宋体',Arial;
+}
+.close{
+	background: url('../images/plus.png') no-repeat 0 10px;
+	height: 32px;
+	padding-left:16px;
+	line-height: 32px;
+	margin-left: 10px;
+}
+.tit_main{
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+}
