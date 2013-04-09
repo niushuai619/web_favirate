@@ -1,21 +1,64 @@
 @CHARSET "UTF-8";
-body,ul,li{
+body,ul,li,a{
 	margin:0;
 	padding:0;
 	overflow-x:hidden;
 	overflow-y:auto;  
 	font-size: 14px;
 	font-family: '宋体',Arial;
+	list-style: none;
+	text-decoration: none;
 }
 .close{
-	background: url('../images/plus.png') no-repeat 0 10px;
+	background: url('../images/plus.png') no-repeat 0 10px ;
 	height: 32px;
 	padding-left:16px;
 	line-height: 32px;
-	margin-left: 10px;
+	margin-right: 5px;
+	
 }
 .tit_main{
-	color: #fff;
-	font-size: 30px;
+	float: left;
+	width: 980px;
+	margin-left: 40px;
+}
+.logo{
+	background: url('../images/logo.png') no-repeat  20px 10px ;
+	width: 180px;
+	height: 80px;
+	display: block;
+	float: left;
+}
+.left_top{
+	padding-top: 20px;
+
+}
+.left_top ul{
+	margin-left: 20px;
+}
+.top_act{
+	height: 48px;
+	float: left;
+	width: 100%;
+	line-height: 40px;
+}
+.top_menu{
+	float: left;
+	width: 100%;
+}
+.top_menu ul li{
+	width: 100px;
+	height:35px;
+	float: left;
+	line-height: 35px;
 	text-align: center;
+	background: url('../images/a_bg.jpg');
+	margin-left: 10px;
+}
+.top_menu ul li a{
+		color:#87bcd7;
+	font-weight: bold;
+}
+.top_menu ul li a:hover{
+	color:#14364F
 }
