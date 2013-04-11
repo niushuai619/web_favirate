@@ -4,26 +4,85 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>左侧</title>
 <link href="css/base.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+	    $(".li_bg ul").hide();
+	    $(".li_bg a").click(function(){
+	    	 	if($(this).attr('class')=='close'){
+	    	 		$(this).siblings("ul").show();
+	    	 		 $(this).removeClass('close').addClass('minus');
+	    	 	}else{
+	    	 		   $(this).siblings("ul").hide();
+	    	 		   $(this).removeClass('minus').addClass('close');
+	    	 	}
+	    })
+  })
+</script>
 </head>
 <body bgcolor="#F7FBFC">
  <div  class="left_top">
    <ul>
-       <li class="close"><a href="http://www.baidu.com"  target="right_main">网站基本信息1</a></li>
-       <li class="close">网站基本信息1</li>
-       <li class="close">网站基本信息1</li>
-       <li class="close">网站基本信息1</li>
-       <li class="close">网站基本信息1</li>
-       <li class="close">网站基本信息1</li>
-       <li class="close">网站基本信息1</li>
-              <li class="close">网站基本信息1</li>
-       <li class="close">网站基本信息1</li>
-       <li class="close">网站基本信息1</li>
-       <li class="close">网站基本信息1</li>
-                     <li class="close">网站基本信息1</li>
-       <li class="close">网站基本信息1</li>
-       <li class="close">网站基本信息1</li>
-       <li class="close">网站基本信息1</li>
-
+       <li class="li_bg">
+       			<a  class="close" href="javascript:void(0)"  >网站基本信息1</a>
+       			<ul>
+       				<li class="child" ><a  href="http://www.baidu.com"  target="right_main">网站配置</a></li>
+       			</ul>
+       </li>
+       <li class="li_bg">
+       	<a  class="close" href="javascript:void(0)" >网站基本信息1</a>
+       		<ul>
+       				<li class="child" ><a  href="http://www.baidu.com"  target="right_main">网站配置</a></li>
+      	 	</ul>
+       </li>
+       <li class="li_bg">
+       			<a  class="close" href="javascript:void(0)"  >网站基本信息1</a>
+       			<ul>
+       					<li class="child" ><a  href="http://www.baidu.com"  target="right_main">网站配置</a></li>
+       			</ul>
+       </li>
+       <li class="li_bg">
+       	<a  class="close" href="javascript:void(0)" >网站基本信息1</a>
+       		<ul>
+       				<li class="child" ><a  href="http://www.baidu.com"  target="right_main">网站配置</a></li>
+      	 	</ul>
+       </li>       
+       <li class="li_bg">
+       			<a  class="close"href="javascript:void(0)" >网站基本信息1</a>
+       			<ul>
+       				<li class="child" ><a  href="http://www.baidu.com"  target="right_main">网站配置</a></li>
+       			</ul>
+       </li>
+       <li class="li_bg">
+       	<a  class="close" href="javascript:void(0)" >网站基本信息1</a>
+       		<ul>
+       			<li class="child" >网站配置</li>
+      	 	</ul>
+       </li>      
+       <li class="li_bg">
+       			<a  class="close"href="javascript:void(0)"  >网站基本信息1</a>
+       			<ul>
+       					<li class="child" >网站配置</li>
+       			</ul>
+       </li>
+       <li class="li_bg">
+       	<a  class="close" href="javascript:void(0)"  >网站基本信息1</a>
+       		<ul>
+       				<li class="child" >网站配置</li>
+      	 	</ul>
+       </li>      
+        <li class="li_bg">
+       			<a  class="close"  href="javascript:void(0)" >网站基本信息1</a>
+       			<ul>
+       				<li class="child" >网站配置</li>
+       			</ul>
+       </li>
+       <li class="li_bg">
+       	<a  class="close" href="javascript:void(0)" >网站基本信息1</a>
+       		<ul>
+       			<li class="child" >网站配置</li>
+      	 	</ul>
+       </li>
    </ul>
  </div>
 </body>

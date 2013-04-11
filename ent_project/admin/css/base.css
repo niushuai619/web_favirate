@@ -4,23 +4,47 @@ body,ul,li,a{
 	padding:0;
 	overflow-x:hidden;
 	overflow-y:auto;  
-	font-size: 14px;
-	font-family: '宋体',Arial;
+	font-size: 12px;
+	font-family: Arial,'宋体';
 	list-style: none;
 	text-decoration: none;
 }
+.li_bg{
+		background: url('../images/li_bg.png') no-repeat;
+}
 .close{
-	background: url('../images/plus.png') no-repeat 0 10px ;
-	height: 32px;
-	padding-left:16px;
+	background: url('../images/plus.png') no-repeat 5px 10px;
+	min-height: 32px;
+	padding-left:30px;
 	line-height: 32px;
-	margin-right: 5px;
-	
+	height:auto;
+	margin-right: 10px;
+	font-weight: bold;
+	color: #fff;
+	display: block;
+}
+.minus{
+	background: url('../images/minus.png') no-repeat 5px 10px;
+	min-height: 32px;
+	padding-left:30px;
+	line-height: 32px;
+	height:auto;
+	margin-right: 10px;
+	font-weight: bold;
+	color: #fff;
+	display: block;
+}
+.child{
+	margin: 5px;
+	color: #666;
+}
+.child a:hover{
+	color: red;
 }
 .tit_main{
 	float: left;
-	width: 980px;
-	margin-left: 40px;
+	width:auto;
+	margin-left: 10px;
 }
 .logo{
 	background: url('../images/logo.png') no-repeat  20px 10px ;
@@ -34,26 +58,30 @@ body,ul,li,a{
 
 }
 .left_top ul{
-	margin-left: 20px;
+	margin-left: 10px;
 }
+
 .top_act{
-	height: 48px;
+	height: 50px;
 	float: left;
 	width: 100%;
 	line-height: 40px;
 }
-.top_menu{
+.top_menu,.astar{
 	float: left;
-	width: 100%;
+}
+.astar img{
+	margin-top: 10px;
+	background:  url('../images/astar_bg.png') no-repeat;
 }
 .top_menu ul li{
-	width: 100px;
-	height:35px;
+	width: 90px;
+	height:30px;
 	float: left;
 	line-height: 35px;
 	text-align: center;
-	background: url('../images/a_bg.jpg');
-	margin-left: 10px;
+	background: url('../images/a_bg.jpg') no-repeat;
+	margin-left: 5px;
 }
 .top_menu ul li a{
 		color:#87bcd7;
@@ -61,4 +89,24 @@ body,ul,li,a{
 }
 .top_menu ul li a:hover{
 	color:#14364F
+}
+.sys_intro{
+	padding: 20px;
+}
+.adm_1{
+	width: 46%;
+	min-height: 200px;
+	height: auto;
+	float: left;
+	overflow: hidden;
+	margin-left: 20px;
+}
+.adm_1 h1{
+	font-size: 14px;
+	background-color: #ddd;
+	height: 30px;
+	line-height: 30px;
+	color: #14364F;
+	padding-left:15px;
+	border-bottom: 1px solid #14364F;
 }
