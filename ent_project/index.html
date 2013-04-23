@@ -2,8 +2,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>星族网</title>
+<title>寻陌友社交网</title>
 <link type="text/css"  href="css/common.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/slides.pic.js"></script>
 </head>
 <body>
 <div class="nav">
@@ -25,48 +27,49 @@
 	<div  class="banner">
 	       <ul>
 	       		<li>
-	       		<span><a class="on" href="#">首页</a></span>
+	       		<span><a class="on" href="index.html">首页</a></span>
 	       		</li>
 	     	     <li>
-	       		<span><a href="#">明星</a></span>
+	       		<span><a href="line_active.html">线下活动</a></span>
 	       		</li>
 	       		<li>
-	       		<span><a href="#">我是歌手</a></span>
+	       		<span><a href="#">附近美食</a></span>
 	       		</li>
 	       		<li>
-	       		<span><a href="#">好声音</a></span>
+	       		<span><a href="#">伙伴旅游</a></span>
+	       		</li>
+	       		<li>
+	       		<span><a href="#">找到童年的Ta</a></span>
+	       		</li>
+	       		<li>
+	       		<span><a href="#">身边发现</a></span>
 	       		</li>
 	       </ul>
 	</div>
 </div>
+<script type="text/javascript">
+$(function(){
+	$("#slides_ul").KinSlideshow({
+			moveStyle:"right",
+			titleBar:{titleBar_height:35,titleBar_bottom:5,titleBar_bgColor:"#000",titleBar_alpha:0.9},
+			titleFont:{TitleFont_size:12,TitleFont_color:"#FFFFFF",TitleFont_weight:"bold"},
+			btn:{btn_bgColor:"#FFFFFF",btn_bgHoverColor:"#3B8F16",btn_fontColor:"#3B8F16",btn_fontHoverColor:"#FFFFFF",btn_borderColor:"#FFFFFF",btn_borderHoverColor:"#FFFFFF",btn_borderWidth:1}
+	});
+})
+</script>
 <div  class="main_container">
-		<div class="area1 m_t_10">
+		<div class="area1">
 		   	<div class="area_left  m_r_15">
-		   				<ul  style="width:4000px;margin-left:-1360px ">
-		   				  <li class="side">
-		   				  	<img src="images/84120808.jpg"/>
-		   				  	<span ></span>
-		   				  	<a href="#">影视基地的展示</a>
-		   				  </li>
-		   				  <li class="side">
-		   				  	<img src="images/1.jpg"/>
-		   				  	<span ></span>
-		   				  	<a href="#">影视基地的展示1</a>
-		   				  </li>
-		   			 <li class="side">
-		   				  	<img src="images/2.jpg"/>
-		   				  	<span ></span>
-		   				  	<a href="#">影视基地的展示2</a>
-		   				  </li>
-		   				</ul>
-		   		<div  class="side_btn">
-		   			 <span></span>
-		   			 <span></span>
-		   			 <span class="on"></span>
-		   		</div>
+				  <div id="slides_ul" style="visibility:hidden;">
+				      <a href="#" target="_blank" >	<img src="images/750x500.jpg" alt="土耳其热气球 怪石堡的奇幻飞越"  width="680" height="330" style="float: right"/></a>
+				      <a href="#" target="_blank">  	<img src="images/752x499.jpg"  alt="马尔代夫 卓美亚沙洲上的梦幻天堂"  width="680" height="330" style="float: right"/></a>
+				      <a href="#" target="_blank"><img src="images/752x500.jpg"  alt="华清池 唐明皇与杨贵妃千古爱情的幽会地"  width="680" height="330" style="float: right"/></a>
+				       <a href="#" target="_blank" ><img src="images/756x500.jpg"  alt="绽放在小巷中的建筑奇葩 巴塞罗那音乐厅"  width="680" height="330" style="float: right"/></a>
+				         <a href="#" target="_blank"><img src="images/858x500.jpg"  alt="小艺微访谈第10期：吃喝玩乐的台湾" width="680" height="330" style="float: right"/></a>
+				  </div>
 		   	</div>
 		   	<div class="area_right">
-		   	     <h2  class="h2_cls"><a href="#">娱乐圈</a></h2>
+		   	     <h2  class="h2_cls"><a href="#">最新活动公告</a></h2>
 		   	     <div class="area_line">
 		   	          <ul class="ul_rt1">
 		   	          	  <li><span class="level_span">1</span><a href="#">我是歌手第五期逆袭我是歌手第五期逆袭我是歌手第五期逆袭</a></li>
@@ -86,7 +89,7 @@
 		
 		<div class="area2 m_t_10">
 		   	<div class="area2_left  m_r_15">
-		   		 <h2  class="h2_cls"><a href="#">娱乐焦点</a></h2>	
+		   		 <h2  class="h2_cls"><a href="#">线下活动</a></h2>	
 		   			<div class="area_line">
 <ul class="ul_lt1">
 <li>
@@ -162,7 +165,7 @@
        </div>
 		   	</div>
 		   	<div class="area2_right">
-		   	  <h2  class="h2_cls"><a href="#">明星圈</a></h2>
+		   	  <h2  class="h2_cls"><a href="#">活跃用户</a></h2>
 		   	   <div class="area_line">
 		   	     
 		   	     </div>
@@ -170,33 +173,50 @@
 		</div>
 		
 		<div class="area2 m_t_10">
+				   	<div class="area2_right m_r_15">
+		   	  <h2  class="h2_cls"><a href="#">美食商家</a></h2>
+		   	   <div class="area_line">
+		   	     
+		   	    </div>
+		   	</div>
+		   	<div class="area2_left  ">
+		   		 <h2  class="h2_cls"><a href="#">附近美食</a></h2>	
+		   			<div class="area_line">
+		   	     
+		   	     </div>
+		   	</div>
+
+		</div>
+		
+			<div class="area2 m_t_10">
 		   	<div class="area2_left  m_r_15">
-		   		 <h2  class="h2_cls"><a href="#">娱乐视频</a></h2>	
+		   		 <h2  class="h2_cls"><a href="#">伙伴旅游</a></h2>	
 		   			<div class="area_line">
 		   	     
 		   	     </div>
 		   	</div>
 		   	<div class="area2_right">
-		   	  <h2  class="h2_cls"><a href="#">视频圈</a></h2>
+		   	  <h2  class="h2_cls"><a href="#">感受分享</a></h2>
 		   	   <div class="area_line">
 		   	     
 		   	    </div>
 		   	</div>
 		</div>
 		
-			<div class="area2 m_t_10">
-		   	<div class="area2_left  m_r_15">
-		   		 <h2  class="h2_cls"><a href="#">草根微电影</a></h2>	
-		   			<div class="area_line">
-		   	     
-		   	     </div>
-		   	</div>
-		   	<div class="area2_right">
-		   	  <h2  class="h2_cls"><a href="#">微电圈</a></h2>
+		<div class="area2 m_t_10">
+				   	<div class="area3_right m_r_15">
+		   	  <h2  class="h2_cls"><a href="#">发现身边</a></h2>
 		   	   <div class="area_line">
 		   	     
 		   	    </div>
 		   	</div>
+		   	<div class="area3_left  ">
+		   		 <h2  class="h2_cls"><a href="#">童年的Ta</a></h2>	
+		   			<div class="area_line">
+		   	     
+		   	     </div>
+		   	</div>
+
 		</div>
 </div>
 <div  class="footer">
